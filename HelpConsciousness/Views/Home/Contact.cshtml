@@ -1,0 +1,23 @@
+﻿@if (Session["UserId"] == null)
+{
+    Response.Redirect("http://localhost:59440/User/Login");
+}
+else
+{
+    ViewBag.Title = "Contact Me Here!";
+}
+<div style="background-color: wheat; border-radius: 4px; padding: 10px; text-align: center;">
+    <h1>@ViewBag.Title</h1>
+    <h4>I will help the best I can!</h4>
+
+    <address>
+        1474 Somewhere Dr
+        Glennville, GA 30427<br />
+        <abbr title="Phone">P:</abbr>
+        912.237.0251
+    </address>
+
+    <address>
+        <strong>Support:</strong>   <a href="mailto:ethansdutt@yahoo.com">ethansdutt@yahoo.com</a><br />
+    </address>
+</div>

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="Welcome">
+    <h2 style="color: forestgreen;">Welcome to Help-Conciousness!</h2>
+    <p style="color: lightgoldenrodyellow;">The self-help quote library that will help you to believe in yourself, discover yourself, or simply get you on the fast track to happiness!^.^</p>
+    <h4>@Html.ActionLink("Please Sign in Here to Continue", "Login", "User", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "color: red;" })</h4>
+    <h4>@Html.ActionLink("...Or Register Here!", "Create", "User", routeValues: null, htmlAttributes: new { id = "loginLink", @style="color: red;"  })</h4>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@if(Session["UserId"] == null)
+{ 
+@Scripts.Render("~/Scripts/Welcome.js")
+}

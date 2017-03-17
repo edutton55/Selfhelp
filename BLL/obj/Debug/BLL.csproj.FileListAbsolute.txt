@@ -1,0 +1,18 @@
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\BLL\bin\Debug\BLL.dll
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\BLL\bin\Debug\BLL.pdb
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\BLL\bin\Debug\ApplicationLogger.dll
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\BLL\bin\Debug\DAL.dll
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\BLL\bin\Debug\ApplicationLogger.pdb
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\BLL\bin\Debug\DAL.pdb
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\BLL\obj\Debug\BLL.dll
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\BLL\obj\Debug\BLL.pdb
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\BLL\bin\Debug\BLL.dll
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\BLL\bin\Debug\BLL.pdb
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\BLL\bin\Debug\ApplicationLogger.dll
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\BLL\bin\Debug\DAL.dll
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\BLL\bin\Debug\ApplicationLogger.pdb
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\BLL\bin\Debug\DAL.pdb
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\BLL\obj\Debug\BLL.dll
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\BLL\obj\Debug\BLL.pdb

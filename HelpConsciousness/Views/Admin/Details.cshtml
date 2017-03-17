@@ -1,0 +1,51 @@
+﻿@model HelpConsciousness.Models.UserVM
+
+@if (Session["UserId"] == null)
+{
+    Response.Redirect("http://localhost:59440/User/Login");
+}
+@if ((string)Session["Role"] == "Admin")
+{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+else
+{
+    Response.Redirect("http://localhost59440/Home/Index");
+}
+
+<h2>Details</h2>
+
+<div style="background-color: wheat; border-radius: 4px; padding: 10px; text-align: center;">
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SecLev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SecLev)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>

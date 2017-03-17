@@ -1,0 +1,66 @@
+﻿@model IEnumerable<HelpConsciousness.Models.QuoteVM>
+@if (Session["UserId"] == null)
+{
+    Response.Redirect("http://localhost:59440/User/Login");
+}
+else
+{
+    ViewBag.Title = "QuoteByCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="background-color: wheat; border-radius: 4px; padding: 10px;">
+    <h2>Quotes By Category</h2>
+
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Phrase)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+            <th>Please Rate Here!</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phrase)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                @if (item.HasRated != true)
+                {
+                    <td>
+                        @Html.ActionLink("1", "UpdateRatingByCategory", "Quote", new { rateId = 1, category = Session["Category"], id = item.QuoteId }, null)
+                        @Html.ActionLink("2", "UpdateRatingByCategory", "Quote", new { rateId = 2, category = Session["Category"], id = item.QuoteId }, null)
+                        @Html.ActionLink("3", "UpdateRatingByCategory", "Quote", new { rateId = 3, category = Session["Category"], id = item.QuoteId }, null)
+                        @Html.ActionLink("4", "UpdateRatingByCategory", "Quote", new { rateId = 4, category = Session["Category"], id = item.QuoteId }, null)
+                        @Html.ActionLink("5", "UpdateRatingByCategory", "Quote", new { rateId = 5, category = Session["Category"], id = item.QuoteId }, null)
+                    </td>
+                }
+                else
+                {
+                    <td>Thanks for rating this quote!</td>
+                }
+            </tr>
+        }
+
+    </table>
+</div>

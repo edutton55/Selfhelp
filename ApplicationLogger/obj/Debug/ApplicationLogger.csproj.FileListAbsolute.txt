@@ -1,0 +1,10 @@
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\ApplicationLogger\bin\Debug\ApplicationLogger.dll
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\ApplicationLogger\bin\Debug\ApplicationLogger.pdb
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\ApplicationLogger\obj\Debug\ApplicationLogger.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\ApplicationLogger\obj\Debug\ApplicationLogger.dll
+C:\Users\Admin\Documents\WorkSpace\HelpConsciousness\ApplicationLogger\obj\Debug\ApplicationLogger.pdb
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\ApplicationLogger\bin\Debug\ApplicationLogger.dll
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\ApplicationLogger\bin\Debug\ApplicationLogger.pdb
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\ApplicationLogger\obj\Debug\ApplicationLogger.csprojResolveAssemblyReference.cache
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\ApplicationLogger\obj\Debug\ApplicationLogger.dll
+C:\Users\Onshore\Documents\Visual Studio 2015\Projects\Capstone\ApplicationLogger\obj\Debug\ApplicationLogger.pdb

@@ -1,0 +1,17 @@
+﻿@if (Session["UserId"] == null)
+{
+    Response.Redirect("http://localhost:59440/User/Login");
+}
+else
+{
+    ViewBag.Title = "Articles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="background-color: wheat; border-radius: 4px; padding: 10px; text-align: center;">
+    <h3>Here are some pretty interesting articles to read!</h3>
+    <ul>
+        <li><a style="font-size: 2em; color: forestgreen;" href="http://www.collective-evolution.com/2014/06/28/8-common-traits-of-happy-people-that-they-dont-talk-about/">9 Common Traits of Happy People</a></li>
+        <li><a style="font-size: 2em; color: forestgreen;" href="http://themindunleashed.org/2014/12/25-life-lessons-albert-einstein.html">25 Life Lessons from Albert Einstein</a></li>
+        <li><a style="font-size: 2em; color: forestgreen;" href="http://themindunleashed.org/2014/10/12-common-symbols-dreams-mean.html">Dreams and What They Can Mean</a></li>
+</ul>
+</div>

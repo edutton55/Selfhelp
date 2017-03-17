@@ -1,0 +1,26 @@
+﻿@if (Session["UserId"] == null)
+{
+    Response.Redirect("http://localhost:59440/User/Login");
+}
+else
+{
+    ViewBag.Title = "Home Page";
+
+}
+
+<div class="jumbotron">
+    <h3>Quotes By Categories</h3>
+    <ul id="categories">
+        <li>@Html.ActionLink("Happiness", "QuoteByCategory", "Quote", new { category = "Happiness", rateId = 0 }, new { @style="font-size: 2em;" })</li>
+        <li>@Html.ActionLink("Confidence", "QuoteByCategory", "Quote", new { category = "Confidence", rateId = 0 }, new { @style = "font-size: 2em;" })</li>
+        <li>@Html.ActionLink("Love", "QuoteByCategory", "Quote", new { category = "Love", rateId = 0 }, new { @style = "font-size: 2em;" })</li>
+        <li>@Html.ActionLink("Humor", "QuoteByCategory", "Quote", new { category = "Humor", rateId = 0 }, new { @style = "font-size: 2em;" })</li>
+        <li>@Html.ActionLink("Sad/Depression", "QuoteByCategory", "Quote", new { category = "Sadness/Depression", rateId = 0 }, new { @style = "font-size: 2em;" })</li>
+        <li>@Html.ActionLink("Life", "QuoteByCategory", "Quote", new { category = "Life", rateId = 0 }, new { @style = "font-size: 2em;" })</li>
+    </ul>
+    
+</div>
+
+<div class="row">
+    
+</div>

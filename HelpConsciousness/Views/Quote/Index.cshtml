@@ -1,0 +1,71 @@
+﻿@model IEnumerable<HelpConsciousness.Models.QuoteVM>
+@if (Session["UserId"] == null)
+{
+    Response.Redirect("http://localhost:59440/User/Login");
+}
+else
+{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Here are some pretty good quotes from some pretty good people...</h2>
+<div style="background-color: wheat; border-radius: 4px; padding: 10px;">
+    <table id="Quotes" class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.QuoteId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phrase)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+            <th>Please Rate Here!</th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuoteId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phrase)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                @if (item.HasRated != true)
+                {
+                    <td>
+                        @Html.ActionLink("1", "UpdateRating", "Quote", new { rateId = 1, id = item.QuoteId }, null)
+                        @Html.ActionLink("2", "UpdateRating", "Quote", new { rateId = 2, id = item.QuoteId }, null)
+                        @Html.ActionLink("3", "UpdateRating", "Quote", new { rateId = 3, id = item.QuoteId }, null)
+                        @Html.ActionLink("4", "UpdateRating", "Quote", new { rateId = 4, id = item.QuoteId }, null)
+                        @Html.ActionLink("5", "UpdateRating", "Quote", new { rateId = 5, id = item.QuoteId }, null)
+                    </td>
+                }
+                else
+                {
+                    <td>Thanks for rating this quote!</td>
+                }
+            </tr>
+        }
+
+    </table>
+</div>

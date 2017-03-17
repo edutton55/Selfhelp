@@ -1,0 +1,14 @@
+﻿@if (Session["UserId"] == null)
+{
+    Response.Redirect("http://localhost:59440/User/Login");
+}
+else
+{
+    ViewBag.Title = "The reason behind it all...";
+}
+<div style="background-color: wheat; border-radius: 4px; padding: 10px; text-align: center;">
+    <h1>@ViewBag.Title</h1>
+    <h3>Help-Consciousness</h3>
+
+    <p style="font-size: 16px;">Have you ever felt alone, lost, or forgotten about in life? Have you ever wanted to just drop everything and back out of society? Being homeless on St Simons Island, I felt that way for a while. However, after while I realized I didnt want to be sad or unhappy. One day I read a quote: "It is not how much we have, but how much we enjoy, that makes happiness. - Charles Spurgeon". This quote (and Smiley, my homeless friend) helped me see the beauty in life even when it seems as if there is none. I learned to enjoy the little things and to embrace life for life itself. That year of being without much food, money or a home taught me to never lose my happiness and thoughts on life, and everything that happened in that year seems to have lead me to Onshore Outsourcing in some way. To sum it all up, I hoped to create this site to give little bits of inpiration to those who need it.</p>
+</div>
